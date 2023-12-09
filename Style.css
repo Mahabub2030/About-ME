@@ -155,14 +155,14 @@ nav{
     color: var(--color-black)!important;
 }
 .active{
-    color: var(--color-black);
+    color: var(--color-black) !important ;
 }
 .active::before{
     width: 100% !important;
 
 }
 
-/* ----------navar ends here  */
+/* ----------navar ends here   -------------  */
 
 
 /*----------------- header section stars here ------------ */
@@ -182,30 +182,52 @@ nav{
     margin: 1rem 0;
     color: var(--color-primary);
 }
-.header-container p{
-    margin: 0 0 2rem;
+.header-container h3{
+    margin: 1rem 0;
+    color: var(--color-primary);
 }
+.header-container p{
+    margin: 0 0 0 1rem;
+   
+}
+
 .header-right{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
 }
 .circle{
     width: 28rem;
+    height: 28rem;
     position: relative;
-    border: 1px soild  var(--color-primary);
+    border: 1px solid var(--color-primary);
     border-radius: 50%;
+    animation: Moving 20s linear infinite;
 }
-.circle a{
+/* @keyframes Moving{
+    to{
+        transform: rotate(360deg);
+    }
+} */
+/* .circle a{
     height: 4rem;
     width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: rgb(242, 242, 244);
     position: absolute;
     border-radius: 50%;
     color: var(--color-primary);
+    font-size: 22px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+.circle a :hover{
+    background: #171c23;
+    color: var(--color-White);
+
 }
 .circle a:nth-child(1){
     left: calc(50% - 2rem);
@@ -225,7 +247,7 @@ nav{
     bottom:-2rem;
 }
 
-
+ */
 
 
 /* -----------------header section ends here------------  */
